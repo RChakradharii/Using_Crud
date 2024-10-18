@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Management</title>
+    <link rel="stylesheet" href="app.css">
+    <script defer src="app.js"></script>
+</head>
+<body> 
+    <h1>I'm using CRUD</h1>
+
+    <!-- Form to Add/Update User -->
+    <div>
+        <h2>Create/Read/Update/Delete</h2>
+        <form id="user-form">
+            <input type="hidden" id="user-id" />
+            <label>Name: </label>
+            <input type="text" id="name" required><br>
+            <label>Phone Number: </label>
+            <input type="text" id="phone_number" required><br>
+            <label>Age: </label>
+            <input type="number" id="age" required><br>
+            <label>Gender: </label>
+            <input type="text" id="gender" required><br>
+            <label>Government Employee: </label>
+            <input type="checkbox" id="gov_employee"><br>
+            <label>District: </label>
+            <input type="text" id="district" required><br>
+            <label>City: </label>
+            <input type="text" id="city" required><br>
+            <label>State: </label>
+            <input type="text" id="state" required><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- User List -->
+    <div>
+        <h2>All Users</h2>
+        <table id="user-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Gov. Employee</th>
+                    <th>District</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be inserted dynamically here -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
